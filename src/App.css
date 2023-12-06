@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+.login-button {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.login-area {
+  padding-left: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.menu-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-list li {
+  padding: 10px;
+}
+.menu-list li a{
+  text-decoration: none;
+  color:black;
+  margin-left:15px;
+}
+
+.menu-area {
+  display: flex;
+  justify-content: center;
+}
+
+.search-box {
+  position: absolute;
+  right: 20px;
+  padding: 5px;
+  border-bottom: 1.5px solid #000;
+}
+
+.search-box input {
+  border: none;
+  margin-left: 5px;
+  outline: none;
+  border-color: black;
+}
+
+.item-card {
+  background-color: white;
+}
+.item-card:hover {
+  transform: scale(1.1);
+}
+.choice{
+  padding-top: 5px;
+  font-size: 15px;
+  color: #63786a;
+  font-weight: 700;
+}
+.new-product{
+  font-size: 15px;
+}
+.title-product{
+  padding-top: 5px;
+}
+
+.product-img{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.choice{
+  color: #63786a;
+  font-weight: 700;
+}
+
+.drop-down{
+  margin-top: 30px;
+}
+#dropdown-basic{
+  border-color: #212529;
+  color: #212529;
+  background-color: white;
+}
+#dropdown-basic:hover{
+  color: white;
+  background-color: #212529;
+}
+
+#lg-button{
+  margin-top: 20px;
+  color: white;
+  border-color: #212529;
+  background-color: #212529;
+}
+
+.image{
+  width: 400px;
+  padding-right: 10px;
+}
+
+.hide{
+  visibility:hidden
+}
+@media screen and (max-width: 63rem) {
+  .hide {
+    visibility:visible;
+  }
+  .menu-list {
+    display: none;
+  }
+  .search-box{
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.side-menu {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index:2
+}
+.side-menu-list button {
+  margin: 5px;
+  border: none;
+  background: none;
+  width: 120px;
+}
+.side-menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  border: none;
+  background: none;
+}
+.side-menu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.side-menu-list button:hover {
+  color: rgba(255, 0, 0, 0.748);
+  border-radius: 3px;
+} 
+.burger-menu{
+  margin-left: 20px;
+  margin-top: 10px;
 }
