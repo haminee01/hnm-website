@@ -1,0 +1,112 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "img": "/images/belted_twill_coat.png",
+      "title": "Belted Twill Coat",
+      "price": 99900,
+      "choice": true,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 1,
+      "img": "/images/slim_fit_mom_high_ankle_jeans.png",
+      "title": "Slim-fit Mom High Ankle Jeans",
+      "price": 29900,
+      "choice": true,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 2,
+      "img": "/images/wide_high_waist_jeans.png",
+      "title": "Wide High Waist Jeans",
+      "price": 39900,
+      "choice": false,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 3,
+      "img": "/images/puff_sleeve_dress.png",
+      "title": "Puff Sleeve Dress",
+      "price": 39900,
+      "choice": false,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 4,
+      "img": "/images/frill_detail_blouse.png",
+      "title": "Frill-detail Blouse",
+      "price": 29900,
+      "choice": true,
+      "new": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 5,
+      "img": "/images/jacquard_shirt_dress.png",
+      "title": "Jacquard Shirt Dress",
+      "price": 39900,
+      "choice": false,
+      "new": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 6,
+      "img": "/images/double_breasted_jacket.png",
+      "title": "Double-breasted Jacket",
+      "price": 39900,
+      "choice": true,
+      "new": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 7,
+      "img": "/images/oversized_zip_up_hoodie.png",
+      "title": "Oversized Zip-up Hoodie",
+      "price": 99900,
+      "choice": false,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 8,
+      "img": "/images/printed_cropped_top.png",
+      "title": "Printed Cropped Top",
+      "price": 14900,
+      "choice": true,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 9,
+      "img": "/images/printed_t-shirt.png",
+      "title": "Printed T-shirt",
+      "price": 19900,
+      "choice": false,
+      "new": true,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 10,
+      "img": "/images/wide_twill_pants.png",
+      "title": "Wide Twill Pants",
+      "price": 19900,
+      "choice": true,
+      "new": false,
+      "size": ["S", "M", "L"]
+    },
+    {
+      "id": 11,
+      "img": "/images/flared_low_rise_jeans.png",
+      "title": "Flared Low Rise Jeans",
+      "price": 29900,
+      "choice": true,
+      "new": true,
+      "size": ["S", "M", "L"]
+    }
+  ]
+}

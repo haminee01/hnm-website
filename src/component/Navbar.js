@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { Link, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 
-const Navbar = ({ authenticate, setAuthenticate }) => {
+const Navbar = () => {
   const menuList = [
     "여성",
     "Divided",
@@ -18,9 +19,15 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
 
   let [width, setWidth] = useState(0);
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const authenticate = useSelector((state) => state.auth.authenticate);
 
   const goToLogin = () => {
     navigate("/login");
+  };
+
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT_SUCCESS" });
   };
 
   const search = (event) => {
@@ -41,12 +48,12 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
           ))}
         </div>
       </div>
-      <div className="nav-header">
+      <div className="nav-header" style={{ marginRight: "30px" }}>
         <div className="burger-menu hide">
           <FontAwesomeIcon icon={faBars} onClick={() => setWidth(250)} />
         </div>
         {authenticate ? (
-          <div className="login-button" onClick={() => setAuthenticate(false)}>
+          <div className="login-button" onClick={handleLogout}>
             <FontAwesomeIcon icon={faUser} />
             <span className="login-area" style={{ cursor: "pointer" }}>
               로그아웃
@@ -74,7 +81,7 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
       <div class="menu-area">
         <ul className="menu-list">
           {menuList.map((menu, index) => (
-            <li>
+            <li key={index}>
               <a href="#" key={index}>
                 {menu}
               </a>
@@ -82,7 +89,7 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
           ))}
         </ul>
 
-        <div className="search-box">
+        <div className="search-box" style={{ marginRight: "20px" }}>
           <FontAwesomeIcon icon={faSearch} />
           <input type="text" onKeyPress={(event) => search(event)} />
         </div>
